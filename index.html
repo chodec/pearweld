@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <!-- Styles -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="/style/style.css" />
-  <link
-    href="http://fonts.googleapis.com/css?family=Roboto"
-    rel="stylesheet"
-    type="text/css"
-  />
-
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Svářečské práce Jablonec nad Nisou. Svářečské práce Turnov. Svářečské práce Liberec. Svářování. Sváření." content="Svářečské práce Jablonec nad Nisou. Svářečské práce Turnov. Svářečské práce Liberec. Svářování. Sváření."/>
-    <title>Pearweld</title>
-    <link rel="icon" type="/img/x-icon" href="/img/favicon.ico">
+    
+    <meta name="description" content="Zakázková výroba, svářečské práce a prodej hutního materiálu v regionech Turnov, Liberec a Jablonec. Kvalitní kovovýroba a spolehlivost."/>
+    <meta name="robots" content="index, follow">
+    
+    <title>Pearweld - Zakázková výroba, Svářečské práce a Hutní Materiál</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="img/x-icon" href="img/favicon.ico">
   </head>
 
   <body>
     <div class="header">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid brown-hr">
-          <img src="/img/pear.png" alt="logo" class="logo" />
+          <img src="img/pear.png" alt="logo" class="logo" />
           <a class="navbar-brand" href="#">Pearweld</a>
           <button
             class="navbar-toggler"
@@ -67,14 +62,15 @@
       </nav>
       <div class="container headline">
         <h1 class="primary-color">
-          Zakázková výroba <br />
-          a prodej hutního<br />
-          materiálu 
+          Zakázková výroba a prodej hutního materiálu <br />
+          v Turnově, Liberci a Jablonci
         </h1>
-        <p class="headline-p h5">
-          Kromě svařování zajistíme veškeré potřebné operace.<br />
-          Ať už se jedná o frézování, soustružení, <br />
-          žíhání, zinkování, lakování, montáž.
+        <p class="headline-p h5 line-height">
+          Kromě svařování zajistíme veškeré potřebné operace. <br>
+          Ať už se jedná o frézování, soustružení, <br>
+          pálení laserem, zinkování, řezání vodním paprskem, <br>
+          žíhání – tepelné i vibrační, zinkování – žárové i galvanické <br>
+          lakování komaxitem a montáž
         </p>
 
         <p class="headline-p h5">
@@ -84,82 +80,87 @@
         <a href="#contact"><button type="button" class="btn btn-primary">Mám zájem!</button></a>
       </div>
     </div>
+    
     <div class="container">
       <div class="custom-shape-divider-top-1682093449">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
       </div>
-      <div class="text-center" id="photogallery">
+      
+      <div class="text-center gallery-header" id="photogallery">
         <h1>Ukázky mé práce</h1>
       </div>
+      
+      <div class="row g-4 pb-5">
+        <div class="row g-4 pb-5">
+    <div class="row g-4 pb-5">
 
-      <div id="nanogallery2"
-          // gallery configuration
-          data-nanogallery2 = '{ 
-            "thumbnailWidth":   "420",
-            "thumbnailHeight":  420,
-            "thumbnailBorderVertical": 0,
-            "thumbnailBorderHorizontal": 0,
-            "thumbnailHoverEffect2": "scale120",
-                "galleryTheme":    {
-                "navigationBreadcrumb": { "background": "#897461" }
-                },
-                "thumbnailLabel": {
-                    "position": "overImageOnMiddle"        
-                },
-                "viewerTheme":      {
-                "background": "#dfe0df"
-            }
-          }'
-        >
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/kovovyroba-konstrukce-turnov-01.jpeg" data-img-alt="Zakázková kovovýroba a svařování, Pearweld Turnov">
+            <img src="img/kovovyroba-konstrukce-turnov-01.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Zakázková kovovyroba a svařování, Pearweld Turnov">
+          </div>
+        </div>
         
-        <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="/img/automotive1.png" alt="Svářování pro automotive Turnov Liberec Jablonec Pearweld">Automotive</a>
-        <a href="/img/automotive1.png" data-ngid="10" data-ngalbumid="1" data-ngthumb="/img/automotive1.png"></a>
-        <a href="/img/automotive2.png" data-ngid="11" data-ngalbumid="1" data-ngthumb="/img/automotive2.png"></a>
-        <a href="/img/automotive3.png" data-ngid="12" data-ngalbumid="1" data-ngthumb="/img/automotive3.png"></a>
-        <a href="/img/automotive4.png" data-ngid="13" data-ngalbumid="1" data-ngthumb="/img/automotive4.png"></a>
-        <a href="/img/automotive5.png" data-ngid="14" data-ngalbumid="1" data-ngthumb="/img/automotive5.png"></a>
-        <a href="/img/automotive6.png" data-ngid="15" data-ngalbumid="1" data-ngthumb="/img/automotive6.png"></a>
-        <a href="/img/automotive7.png" data-ngid="16" data-ngalbumid="1" data-ngthumb="/img/automotive7.png"></a>
-        <a href="/img/automotive8.png" data-ngid="17" data-ngalbumid="1" data-ngthumb="/img/automotive8.png"></a>
-
-
-
-        <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="/img/dilna1.png" alt="Svařování pro dílnu Turnov Liberec Jablonec Pearweld">Dílna</a>
-        <a href="/img/dilna1.png" data-ngid="20" data-ngalbumid="2" data-ngthumb="/img/dilna1.png"></a>
-        <a href="/img/dilna2.png" data-ngid="21" data-ngalbumid="2" data-ngthumb="/img/dilna2.png"></a>
-        <a href="/img/dilna3.png" data-ngid="22" data-ngalbumid="2" data-ngthumb="/img/dilna3.png" ></a>
-        <a href="/img/dilna4.png" data-ngid="23" data-ngalbumid="2" data-ngthumb="/img/dilna4.png"></a>
-        <a href="/img/dilna6.png" data-ngid="24" data-ngalbumid="2" data-ngthumb="/img/dilna6.png"></a>
-
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/prace-v-dilne-svarovani-ocel-01.jpeg" data-img-alt="Svařovací práce v dílně, Pearweld Turnov">
+            <img src="img/prace-v-dilne-svarovani-ocel-01.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Svařovací práce v dílně, Pearweld Turnov">
+          </div>
+        </div>
         
-        <a href="" data-ngkind="album" data-ngid="4" data-ngthumb="/img/domacnost1.png" alt="Svářečské práce pro domácnost Jablonec nad Nisou">Domácnost</a>
-        <a href="/img/domacnost1.png" data-ngid="40" data-ngalbumid="4" data-ngthumb="/img/domacnost1.png"></a>
-        <a href="/img/domacnost2.png" data-ngid="41" data-ngalbumid="4" data-ngthumb="/img/domacnost2.png"></a>
-        <a href="/img/domacnost3.png" data-ngid="42" data-ngalbumid="4" data-ngthumb="/img/domacnost3.png"></a>
-        <a href="/img/domacnost4.png" data-ngid="43" data-ngalbumid="4" data-ngthumb="/img/domacnost4.png"></a>
-        <a href="/img/domacnost5.png" data-ngid="44" data-ngalbumid="4" data-ngthumb="/img/domacnost5.png"></a>
-        <a href="/img/domacnost6.png" data-ngid="45" data-ngalbumid="4" data-ngthumb="/img/domacnost6.png"></a>
-        <a href="/img/domacnost7.png" data-ngid="46" data-ngalbumid="4" data-ngthumb="/img/domacnost7.png"></a>
-        <a href="/img/domacnost8.png" data-ngid="47" data-ngalbumid="4" data-ngthumb="/img/domacnost8.png"></a>
-        <a href="/img/domacnost9.png" data-ngid="48" data-ngalbumid="4" data-ngthumb="/img/domacnost9.png"></a>
-        <a href="/img/domacnost10.png" data-ngid="49" data-ngalbumid="4" data-ngthumb="/img/domacnost10.png"></a>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/svarovani-pro-domacnost-jablonec-01.jpeg" data-img-alt="Svářečské práce pro domácnost, Jablonec nad Nisou">
+            <img src="img/svarovani-pro-domacnost-jablonec-01.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Svářečské práce pro domácnost, Jablonec nad Nisou">
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/kovovyroba-konstrukce-turnov-02.jpeg" data-img-alt="Ostatní svářečské práce a konstrukce, Pearweld">
+            <img src="img/kovovyroba-konstrukce-turnov-02.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Ostatní svářečské práce a konstrukce, Pearweld">
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/svarovani-pro-automotive-liberec-02.jpeg" data-img-alt="Svařování automobilových dílů a přípravků, Liberec">
+            <img src="img/svarovani-pro-automotive-liberec-02.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Svařování automobilových dílů a přípravků, Liberec">
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/prace-v-dilne-detail-svaru-02.jpg" data-img-alt="Detail sváru a práce v kovodílně, Turnov">
+            <img src="img/prace-v-dilne-detail-svaru-02.jpg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Detail sváru a práce v kovodílně, Turnov">
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/kovove-doplnky-nabytek-zakazka-02.jpeg" data-img-alt="Kovové doplňky a nábytek na zakázku, Pearweld">
+            <img src="img/kovove-doplnky-nabytek-zakazka-02.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Kovové doplňky a nábytek na zakázku, Pearweld">
+          </div>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="img/svarovani-hliniku-nerezu-03.jpeg" data-img-alt="Svařování hliníku a nerezu, Jablonec nad Nisou">
+            <img src="img/svarovani-hliniku-nerezu-03.jpeg" class="img-fluid rounded shadow-sm gallery-thumb" alt="Svařování hliníku a nerezu, Jablonec nad Nisou">
+          </div>
+        </div>
+      </div>
+        
+      </div>
+      </div>
 
-
-        <a href="" data-ngkind="album" data-ngid="3" data-ngthumb="/img/ostatni1.png" alt="Svářování Turnov Liberec Jablonec Pearweld">Ostatní</a>
-        <a href="/img/ostatni1.png" data-ngid="30" data-ngalbumid="3" data-ngthumb="/img/ostatni1.png"></a>
-        <a href="/img/ostatni2.png" data-ngid="31" data-ngalbumid="3" data-ngthumb="/img/ostatni2.png"></a>
-        <a href="/img/ostatni3.png" data-ngid="32" data-ngalbumid="3" data-ngthumb="/img/ostatni3.png"></a>
-        <a href="/img/ostatni4.png" data-ngid="33" data-ngalbumid="3" data-ngthumb="/img/ostatni4.png"></a>
-        <a href="/img/ostatni5.png" data-ngid="34" data-ngalbumid="3" data-ngthumb="/img/ostatni5.png"></a>
-        <a href="/img/ostatni6.png" data-ngid="35" data-ngalbumid="3" data-ngthumb="/img/ostatni6.png"></a>
-        <a href="/img/ostatni7.png" data-ngid="36" data-ngalbumid="3" data-ngthumb="/img/ostatni7.png"></a>
-        <a href="/img/ostatni8.png" data-ngid="37" data-ngalbumid="3" data-ngthumb="/img/ostatni8.png"></a>  
-        <a href="/img/ostatni9.png" data-ngid="38" data-ngalbumid="3" data-ngthumb="/img/ostatni9.png"></a>
-        <a href="/img/ostatni10.png" data-ngid="39" data-ngalbumid="3" data-ngthumb="/img/ostatni10.png"></a>
-      </div>  
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-header border-0 pb-0">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-0 text-center">
+            <img src="" id="modalImage" class="img-fluid" alt="Zvětšený obrázek" style="max-height: 90vh;">
+          </div>
+        </div>
+      </div>
     </div>
+
     <div class="container">
       <div class="text-center" id="services">
         <h1>Co vám mohu nabídnout?</h1>
@@ -168,25 +169,25 @@
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="/img/gril.JPEG" alt="First slide">
+            <img class="d-block w-100" src="img/gril.jpeg" alt="Grily a ohniště na míru, zakázková výroba kovových grilů">
             <div class="carousel-caption d-none d-md-block">
               <h5>Grily a ohniště</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/img/furniture.jpg" alt="Second slide">
+            <img class="d-block w-100" src="img/furniture.jpg" alt="Kovový nábytek na zakázku, designové kovové interiéry">
             <div class="carousel-caption d-none d-md-block">
               <h5>Nábytek</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/img/auto.jpeg" alt="Third slide">
+            <img class="d-block w-100" src="img/auto.jpeg" alt="Kontrolní a upínací přípravky pro automobilový průmysl">
             <div class="carousel-caption d-none d-md-block">
               <h5>Kontrolní a upínací přípravky</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/img/hutni.jpeg" alt="Fourth slide">
+            <img class="d-block w-100" src="img/hutni.png" alt="Prodej hutního materiálu, oceli a kovových profilů">
             <div class="carousel-caption d-none d-md-block">
               <h5>Prodej hutního materiálu</h5>
             </div>
@@ -199,61 +200,99 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
-
-
-
     </div>
 
     <div class="container text-center socials" id="contact">
         <h1>Chci se vám ozvat!</h1>
-      <div class="row">
-          <div class="col-lg-3">
-            <a href="https://www.facebook.com/profile.php?id=100063693573180">
-              <div class="card fb">
-                <img src="/img/fb.png" alt="Card image cap">
-                <div class="card-body">
-                  <h6>@PearWeld</h6>
+        
+        <div class="row mb-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <a href="https://www.facebook.com/profile.php?id=100063693573180">
+                    <div class="card fb">
+                        <img src="/img/fb.png" alt="Logo Facebook">
+                        <div class="card-body">
+                            <h6>@PearWeld</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card email">
+                    <img src="/img/email.png" alt="Ikona Email">
+                    <div class="card-body">
+                        <h6>info@pearweld.cz</h6>
+                    </div>
                 </div>
             </div>
-            </a>
-          </div>
-        <div class="col-lg-3">
-          <div class="card email">
-              <img src="/img/email.png" alt="Card image cap">
-              <div class="card-body">
-                <h6>info@pearweld.cz</h6>
-              </div>
-          </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card phone">
+                    <img src="/img/phone.png" alt="Ikona Telefon">
+                    <div class="card-body ">
+                        <h6>777 440 766</h6>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card datovka">
+                    <img src="/img/datovka.png" alt="Ikona Datová schránka">
+                    <div class="card-body">
+                        <h6>d2mcfr4</h6>
+                    </div> 
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3">
-            <div class="card phone">
-              <img src="/img/phone.png" alt="Card image cap">
-              <div class="card-body ">
-                <h6>777 440 766</h6>
-              </div> 
-          </div>
+        
+        <div class="row justify-content-center mt-4"> 
+            <div class="col-auto mb-3"> 
+                <a href="https://www.zivefirmy.cz/spolehliva-firma-2025" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src="img/spolehliva-firma-2025_500.png" 
+                        alt="Ocenění Spolehlivá firma 2025 udělené portálem Živé firmy.cz" 
+                        class="img-fluid reliability-badge" 
+                        style="max-width: 250px; height: auto;"
+                    >
+                </a>
+            </div>
+            <div class="col-auto mb-3"> 
+                <a href="https://www.zivefirmy.cz/spolehliva-firma-2026" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        src="img/spolehliva-firma-2026_500.png" 
+                        alt="Ocenění Spolehlivá firma 2026 udělené portálem Živé firmy.cz" 
+                        class="img-fluid reliability-badge" 
+                        style="max-width: 250px; height: auto;"
+                    >
+                </a>
+            </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card datovka">
-            <img src="/img/datovka.png" alt="Card image cap">
-            <div class="card-body">
-              <h6>d2mcfr4</h6>
-            </div> 
-        </div>
-      </div>
-
-      </div>     
     </div>
+
     <div class="text-center">
       <h1>Kde nás najdete?</h1>
       <h3>Fakturační údaje</h3>
       <h5>Filip Hruša, <span class="color">Lomu 262 Turnov 511 01</span>, IČ 09777539, <span class="color">DIČ CZ8712153780</span></h5>
       <h5>Nacházíme se v areálu <span class="color">Vinolok a.s.</span></h5>
     </div>
-    <div class="container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.177761095813!2d15.186852557114015!3d50.71664123606757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470eb34ab45d8d33%3A0x8652eca9e20ff690!2zUGVhcldlbGQgLSBzdsOhxZllxI1za8OpIHByw6FjZSAtIEhydcWhYSBGaWxpcA!5e0!3m2!1scs!2scz!4v1684399767010!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <div class="container interactive-map"> 
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.357117180907!2d15.150499076939943!3d50.59827667156976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470876ff27a51357%3A0xf657d235c13b2c2!2zTG9tdSAyNjIsIDUxMSAwMSBUdXJub3Y!5e0!3m2!1scs!2scz!4v1700938470659!5m2!1scs!2scz" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-    <div class="container map"></div>
+
+    <div class="container text-center mt-4 mb-5">
+        <img 
+            src="img/mapa.png" 
+            alt="Detail navigace k vrátnici Vinolok a.s., Turnov" 
+            class="img-fluid rounded shadow-lg"
+            style="height: auto;"
+        >
+    </div>
 
     <div class="cookie-consent" id="cookies">
       <span>Tato stránka používá soubory Cookies pro vylepšení uživatelské zkušenosti.</span>
@@ -262,27 +301,33 @@
       </div>
     </div> 
   </body>
-  <!-- JS -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
   <script>
     document.getElementById("cookie").addEventListener("click",() => {
-    document.getElementById("cookies").style.visibility = "hidden";
-  },
-  false
-);
+        document.getElementById("cookies").style.visibility = "hidden";
+    },
+    false
+    );
+    
+    const imageModal = document.getElementById('imageModal');
+    imageModal.addEventListener('show.bs.modal', event => {
+
+      const button = event.relatedTarget;
+
+      const imageSrc = button.getAttribute('data-img-src');
+      const imageAlt = button.getAttribute('data-img-alt');
+
+      const modalImage = imageModal.querySelector('#modalImage');
+
+      modalImage.src = imageSrc;
+      modalImage.alt = imageAlt;
+    });
+
   </script>
-
-  <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"
-></script>
-
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
-></script>
-
 </html>

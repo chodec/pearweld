@@ -22,8 +22,32 @@ a{
   text-decoration: none !important;
 }
 
+.interactive-map {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.interactive-map iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Odsazení pro detailní fotku pod mapou */
+.container.mt-4.mb-5 img {
+    /* img-fluid zajišťuje max-width: 100% a height: auto */
+    width: 100%; /* Zajistí roztáhnutí na celou šířku kontejneru */
+    height: auto;
+    border-radius: 8px; 
+    /* Odstraněno omezení na max-width, nyní se roztáhne na 100% kontejneru */
+}
+
+/* Oprava: iframe už nemá třídu 'map', ale je samostatný, 
+   nastavíme mu šířku 100% v rámci kontejneru */
 iframe{
   width: 100%;
+  height: 450px; /* Přidal jsem výšku, aby iframe nebyl moc vysoký */
+  margin-top: 30px; /* Trochu prostoru nahoře */
 }
 
 .color{
@@ -104,15 +128,37 @@ color: #897461;
   padding: 10px;
 }
 
-/*Gallery*/
+/*Gallery (NOVÉ STYLY) */
 
-#nanogallery2{
-    padding: 7% 0 7% 0;
+.gallery-header {
+    padding-top: 3rem; /* Přidán prostor nahoře */
+    padding-bottom: 2rem; /* Přidán prostor dole */
 }
 
-.nano-label{
-    background-color: #897461;
+.gallery-item {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.25rem; /* Zůstalo zaoblení z Bootstrap třídy rounded */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
+.gallery-thumb {
+    width: 100%;
+    height: 300px; /* Pevná výška pro jednotný vzhled */
+    object-fit: cover; /* Zajišťuje, že obrázek pokryje celou plochu bez deformace */
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item:hover .gallery-thumb {
+    transform: scale(1.1); /* Efekt zvětšení při najetí myší */
+}
+
+/* Modal pro rozkliknutí obrázku */
+#imageModal .modal-content {
+    background-color: rgba(0, 0, 0, 0.8); /* Tmavé pozadí pro lepší viditelnost obrázku */
+}
+
 
 /*Carousel*/
 .carousel-caption{
@@ -148,11 +194,24 @@ color: #897461;
 padding: 8% 0 5% 0;
 }
 
-/*MAP*/
+.line-height{
+    line-height: 2.2;
+}
 
-.map{
+/*MAP*/
+/* Tuto třídu map odstraňuji, protože mapa už je iframe s pevnou výškou a šířkou 100% */
+/* .map{
 background-image: url("/img/mapa.png");
 height: 650px;
+} */
+
+.reliability-badge {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.reliability-badge:hover {
+    transform: scale(1.05); /* Mírné zvětšení při najetí myší */
 }
 
 /*COOKIES*/
