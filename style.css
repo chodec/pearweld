@@ -60,7 +60,8 @@ color: #897461;
   background-image: url("/img/header.png");
   background-size: cover;
   width: 100%;
-  height: 960px;
+  height: auto;
+  padding-bottom: 10%;
 }
 
 .headline {
@@ -139,8 +140,21 @@ color: #897461;
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    border-radius: 0.25rem; /* Zůstalo zaoblení z Bootstrap třídy rounded */
+    border-radius: 0.25rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    
+    /* ZAJIŠTĚNÍ CENTROVÁNÍ V JAKÉMKOLI SLOUPCI: */
+    display: block; /* Umožní margin: auto fungovat */
+    margin: 0 auto; /* Centruje horizontálně */
+    
+    /* Omezení šířky, aby margin: auto měl co centrovat. 
+       95% je kompromis, aby se items navzájem nedotýkaly */
+    max-width: 95%; 
+}
+
+.gallery-item img {
+    display: block;
+    margin: 0 auto;
 }
 
 .gallery-thumb {
@@ -195,7 +209,7 @@ padding: 8% 0 5% 0;
 }
 
 .line-height{
-    line-height: 2.2;
+    line-height: 1.2;
 }
 
 /*MAP*/
